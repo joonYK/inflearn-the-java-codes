@@ -1,0 +1,24 @@
+allprojects {
+    apply plugin: 'java'
+    sourceCompatibility = '11'
+
+    group 'jy.study.inflearn.the-java-codes'
+    version '1.0-SNAPSHOT'
+}
+
+subprojects {
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
+
