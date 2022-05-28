@@ -1,4 +1,4 @@
-package jy.study.java;
+package jy.study.java.bytebuddy;
 
 public class Moja {
 
