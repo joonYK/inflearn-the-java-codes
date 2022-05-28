@@ -18,3 +18,16 @@ jacocoTestReport {
     }
     dependsOn test // tests are required to run before generating the report
 }
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            element = 'PACKAGE'
+            limit {
+                counter = 'LINE'
+                value = 'COVEREDRATIO'
+                minimum = 0.9
+            }
+        }
+    }
+}

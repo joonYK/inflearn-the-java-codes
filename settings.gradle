@@ -1,3 +1,4 @@
 rootProject.name = 'inflearn-the-java-codes'
 include 'bytecode-codeCoverage'
+include 'bytecode-changing'
 
