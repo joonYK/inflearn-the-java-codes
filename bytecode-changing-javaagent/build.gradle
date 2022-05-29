@@ -1,0 +1,18 @@
+plugins {
+    id 'com.coditory.manifest' version '0.2.0'
+}
+
+manifest {
+    buildAttributes = false
+    implementationAttributes = true
+    scmAttributes = false
+    attributes = [
+            "Premain-Class" : "jy.study.java.MasulsaAgent",
+            "Can-Redefine-Classes" : true,
+            "Can-Retransform-Classes" : true
+    ]
+}
+
+dependencies {
+    implementation 'net.bytebuddy:byte-buddy:1.12.10'
+}
