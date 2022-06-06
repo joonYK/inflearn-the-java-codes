@@ -23,6 +23,7 @@ public class AnnotationReflection {
         System.out.println("필드에 선언된 애노테이션 조회");
         Arrays.stream(Book.class.getDeclaredFields()).forEach(field -> {
             Arrays.stream(field.getDeclaredAnnotations()).forEach(System.out::println);
+            System.out.println(field.getAnnotation(BookFieldAnnotation.class));
         });
 
         System.out.println();
