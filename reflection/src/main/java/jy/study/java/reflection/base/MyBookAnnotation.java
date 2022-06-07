@@ -1,10 +1,10 @@
-package jy.study.java.reflection;
+package jy.study.java.reflection.base;
 
 import java.lang.annotation.*;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE, ElementType.FIELD})
-public @interface BookFieldAnnotation {
+public @interface MyBookAnnotation {
 
-    String value();
+    String value() default "MyBook";
 }

@@ -1,4 +1,7 @@
-package jy.study.java.reflection;
+package jy.study.java.reflection.base.exec;
+
+import jy.study.java.reflection.base.Book;
+import jy.study.java.reflection.base.MyBook;
 
 import java.lang.reflect.Modifier;
 import java.util.Arrays;
@@ -16,7 +19,7 @@ public class ClassInfoInquiry {
 
         //3. FQCN을 알고있는 경우 Class.forName()로 접근.
         try {
-            Class<?> bookClass2 = Class.forName("jy.study.java.reflection.Book");
+            Class<?> bookClass2 = Class.forName("jy.study.java.reflection.base.Book");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
