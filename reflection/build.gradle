@@ -1,0 +1,4 @@
+dependencies {
+    implementation 'cglib:cglib:3.3.0'
+    implementation 'net.bytebuddy:byte-buddy:1.12.10'
+}
