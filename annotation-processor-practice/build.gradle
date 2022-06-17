@@ -1,0 +1,6 @@
+
+dependencies {
+    compileOnly 'jy.study.java:annotation-processor-magicmoja:0.1'
+    annotationProcessor 'jy.study.java:annotation-processor-magicmoja:0.1'
+    implementation 'com.squareup:javapoet:1.13.0'
+}

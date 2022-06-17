@@ -1,0 +1,17 @@
+apply plugin: 'maven-publish'
+
+dependencies {
+    implementation 'com.squareup:javapoet:1.13.0'
+}
+
+publishing {
+    publications {
+        myPublicationName(MavenPublication) {
+            groupId = 'jy.study.java'
+            artifactId = 'annotation-processor-magicmoja'
+            version = '0.1'
+
+            from components.java
+        }
+    }
+}

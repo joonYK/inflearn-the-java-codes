@@ -1,16 +1,19 @@
 allprojects {
     apply plugin: 'java'
+
     sourceCompatibility = '11'
 
-    group 'jy.study.inflearn.the-java-codes'
-    version '1.0-SNAPSHOT'
-}
-
-subprojects {
+    group 'jy.study.java'
+    version '1.0'
 
     repositories {
         mavenCentral()
+        mavenLocal()
     }
+
+}
+
+subprojects {
 
     dependencies {
         testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
